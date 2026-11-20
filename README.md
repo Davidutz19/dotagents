@@ -41,7 +41,7 @@ Manager owns, and the next activation moves them aside as `<name>.hm-backup`. In
 
 ### install.sh, on a machine without Nix
 
-    git clone git@github.com:DavidutzDev/dotagents.git ~/.agents
+    git clone git@github.com:Davidutz19/dotagents.git ~/.agents
     ~/.agents/install.sh
 
 Run `./install.sh --dry-run` first to see the changes without writing anything.
@@ -56,7 +56,7 @@ skill.
 Add the input and import the module. It links the same files `install.sh` does, so
 nothing has to run after a `git pull`:
 
-    inputs.dotagents.url = "github:DavidutzDev/dotagents";
+    inputs.dotagents.url = "github:Davidutz19/dotagents";
 
     # in a Home Manager config
     imports = [ inputs.dotagents.homeModules.default ];
